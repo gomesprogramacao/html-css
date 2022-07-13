@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tenta abrir esse site em varios dispositivos diferentes aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 700)" srcset="imagens/-p1.png" type="image/png"><!--a ordem das imagens tem que esta correta-->
+        <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png"> <!--para ter um site que se adapte ao aparelho, coloca as imagens (M P) com essas tags-->
+        <img src="imagens/foto-G.png" alt="imagem flexivel">
+    </picture> <!--tag (picture) usado para colocar imagens adaptaveis(P, M, G)-->
+    <h1>Reproduzindo áudios.</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="midia/Échappé-DanBodan.mp3" controls autoplay></audio>
+    <!--MP3, WAV, OGG-->
+    <audio preload="metadata" autoplay controls>
+        <source src="midia/Échappé-DanBodan.mp3" type="audio/mpeg">
+        <source src="midia/Échappé-DanBodan.ogg" type="audio/ogg">
+        <source src="midia/Échappé-DanBodan.wav" type="audio/wav"> <!--se o audio for em algum desses modos(mp3, ogg, wav) tem que colocar o type da msm forma-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/Échappé-DanBodan.mp3"> Clique aqui para baixar o arquivo MP3</a></p> <!--Se não der para reproduzir o áudio, aparece isso para baixar(Obs. não usar Wav)-->
+    </audio>
+</body>
+</html>

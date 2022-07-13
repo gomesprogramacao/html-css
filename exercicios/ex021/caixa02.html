@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0%;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px 7px;
+        }
+        
+        nav {
+            background-color: rgb(150, 143, 143);
+            padding: 3px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.568); /* para fazer sombra */
+            
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px; /*curvas na quina */
+        }
+
+        article {
+            background-color: lightgrey;
+            padding: 5px ;
+        }
+
+        article > aside {
+            background-color: rgb(138, 135, 135);
+            text-align: right;
+        }
+
+        footer {
+            background-color: rgb(17, 0, 78);
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 10px;
+            box-shadow: 2px 2px 2px rgb(255, 255, 255);
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+    </style>
+</head>
+<body>
+    <header><!-- usar (header) para cabecalho -->
+        <h1>Meu site</h1>
+        <nav> <!-- usar (nav) para navegação, links etc.. -->
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main> <!-- usar (main) para conteudo principal -->
+        <section id="Assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="Assuntos"> <!-- usar(selection) para seções --> 
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique accusamus dolores molestiae sapiente ullam ut aut, accusantium expedita officiis. Maiores animi officiis molestiae eum quod aut aperiam laudantium facilis voluptas?</p>
+                <aside>
+                    <p>Artigo escrito por Gustavo</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por GustavoGomes</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

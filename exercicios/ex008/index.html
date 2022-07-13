@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte / pré-formatado</h2>
+    <p>O comando <code>ducument.getElementBy,Id('teste')</code> é escrito em linguagem JavaScript. </p> <!--(CODE) usando para fonte mono espaçada, codigos-->
+    <pre>
+        <code>
+            num = int(input('Digite um número: '))
+            if num % 2 == 0:
+                 print(f'O número {num} é par')
+            else:
+                print(f'o número {num} é impar')
+            print('Fim do programa.') <!--Codigo <pre> </pre> coloca todo o programa correto-->
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo,<q> o computador é um burro muito rápido</q></p><!--o codigo <q> é usado para citações, coloca toda a frase entre "aspas"-->
+    <h2>Citações Completas</h2>
+    <p>segundo Jeff Noble, no seu livro html para leigos:</p>
+    <blockquote cite="link de onde vc buscou, dono da frase, etc.">
+        A diferença entre elementos inlinee um bloco de texto é importante. Os elementos html neste capítulo descrevem os blocos de texto.<!--A tag blockquote faz com que a frase apareça deslocada horizontalmente afastado da margem-->
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="Hypertext Markup Language">html</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando</p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo html</bdo></p> <!--rtl texto da direita para o inverso e ltr-->
+</body>
+</html>
